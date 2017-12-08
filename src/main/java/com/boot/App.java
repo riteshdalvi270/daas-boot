@@ -1,13 +1,16 @@
 package com.boot;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * Hello world!
- *
  */
-public class App 
+@SpringBootApplication // Scans our project for spring components and autowires most of spring libraries.
+public class App
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
+        SpringApplication.run(App.class, args);
     }
 }
