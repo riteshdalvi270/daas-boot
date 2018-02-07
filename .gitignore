@@ -6,3 +6,4 @@
 target/classes/META-INF/MANIFEST.MF
 target/classes/META-INF/maven/com.boot/das-bbot/pom.xml
 .settings
+.idea/*
