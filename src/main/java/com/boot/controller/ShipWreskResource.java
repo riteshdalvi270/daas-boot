@@ -10,15 +10,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.boot.model.Shipwreck;
-import com.boot.resource.ShipwreckStub;
-import com.repository.ShipWreckRepository;
+import com.boot.repository.ShipwreckRepository;
 
 @RestController
 @RequestMapping("/api/v1")
 public class ShipWreskResource {
 
 	@Autowired
-	private ShipWreckRepository shipWreckRepository;
+	private ShipwreckRepository shipWreckRepository;
 	
 	@RequestMapping(value="shipwrecks",method=RequestMethod.GET)
 	public List<Shipwreck> getAllShips() {
